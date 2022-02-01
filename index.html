@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            background-color: hsl(212, 45%, 89%);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .__container {
+            display: flex;
+            width: 20rem;
+            height: 55%;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 1.5rem;
+        }
+        
+        .qrcodectn {
+            display: flex;
+            justify-content: center;
+            height: 55%;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .qrcode {
+            background-image: url("images/image-qr-code.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 1rem;
+            width: 90%;
+            height: 100%;
+        }
+        
+        .qrinfoctn {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 35%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .qrinfo {
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        
+        .qrinfo h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: hsl(218, 44%, 22%);
+        }
+        
+        .qrinfo p {
+            align-self: center;
+            margin-top: 1.3rem;
+            text-align: center;
+            font-size: 15px;
+            width: 90%;
+            color: hsl(220, 15%, 55%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="__container">
+        <div class="__containerbcg">
+            <div class="qrcodectn">
+                <div class="qrcode"></div>
+            </div>
+            <div class="qrinfoctn">
+                <div class="qrinfo">
+                    <h1>
+                        Improve your front-end skills by building projects
+                    </h1>
+                    <p>Scan the qr code to visit FrontEnd Mentor and take your coding skills to the next level</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
